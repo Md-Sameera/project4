@@ -34,7 +34,7 @@
 p{
     margin: 1px 0px 3px 10px;
 }
-.box3{
+#box3{
     color: #FFFFFF;
     background-color: #703ea8;
     border-radius: 10px;
@@ -62,10 +62,13 @@ button{
 }
 button:hover span{
     display: none;
+    border: none;
 }
-button:hover:before{
-    content:"Party time!!"
-}   
+button:hover::after{
+ content:"Party time!!...";
+
+}  
+
 .box5{
     display: flex;
     flex-direction: column;
@@ -91,30 +94,34 @@ button:hover:before{
     text-align: center;
     color: #6508ce;
 }
-.hr{ 
-    width: 60px; 
-    height: 60px;
+#hr{ 
+    width: 50px; 
+    height: 65px;
+    font-size: 35px;
     border: 1 solid wheat;
     display: inline-flex;
     background-color: #c7abd1;
 }
-.min{ 
-    width: 60px; 
+#min{ 
+    width: 50px; 
     height: 60px;
+    font-size: 35px;
     border: 1 solid wheat;
     display: inline-flex;
-background-color: #c7abd1;
+    background-color: #c7abd1;
 }
-.sec{ 
-    width: 60px; 
+#sec{ 
+    width: 50px; 
     height: 60px;
+    font-size: 35px;
     display: inline-flex;
     border: 1 solid wheat;
     background-color: #c7abd1;
 }
-.m{ 
-    width: 60px; 
-    height: 60px;
+#ap{ 
+    width: 70px; 
+    height: 65px;
+    font-size: 35px;
     display: inline-flex;
     border: 1 solid wheat;
     background: linear-gradient(#6E54EC 0%,#FC5EFF 60%);
@@ -137,7 +144,7 @@ background: #FFFFFF ;
 border-radius: 10px;
 opacity: 0.22;
 }
-.box7{
+#box7{
     background: #FFFFFF ;
     border: 1px solid #EDEDED;
     border-radius: 10px;
@@ -147,6 +154,15 @@ opacity: 0.22;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #624b7a;
     padding: 35px 0px 35px 35px;
+}
+.idi{
+    color: #3D087B;
+    width: 90px; 
+    height: 65px;
+    display: inline-flex;
+    border: 1 solid wheat;
+    background-color: #c7abd1;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 600px) 
@@ -161,7 +177,7 @@ opacity: 0.22;
         height: 100%;
         justify-content: center;
     }
-    .box3{
+    #box3{
         margin: 5% 5% 0% 5%;
         width: 90%;
     }
@@ -186,8 +202,13 @@ opacity: 0.22;
         margin-left: 25%;
         width: 50%;
     }
-    .box7{
+    #box7{
         margin:2% 0% 0% 15%;
         width: 63%;
     }
+    .idi{
+        width: 15%;
+        font-size: 80%;
+    }
 }
+
